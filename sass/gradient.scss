@@ -1,0 +1,19 @@
+@import "base";
+
+body{
+
+  /* EXEMPLO DE PATTERN
+  background-image:
+    linear-gradient(#ddd 18px, transparent 18px),
+    linear-gradient(90deg, #ddd 18px, transparent 18px);
+  background-position: 0 0, 0 -2px, -2px 0;
+  background-color: #999;
+  background-size:  20px 20px, 20px 20px;
+*/
+}
+
+
+
+.animation .ball{
+  display: none;
+}

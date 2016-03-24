@@ -1,0 +1,41 @@
+html {
+  height: 100%; }
+
+body {
+  margin: 20px;
+  height: calc(100vw - 40px); }
+
+img {
+  max-width: calc(100vw - 40px);
+  max-height: calc(100vh - 40px); }
+
+.blendmode img {
+  position: absolute;
+  max-width: calc(100vw - 180px);
+  max-height: calc(100vh - 180px); }
+
+.blendmode img:first-of-type {
+  z-index: 1;
+  top: 160px;
+  left: 160px; }
+
+.ball {
+  background: tomato;
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block; }
+
+body {
+  /* EXEMPLO DE PATTERN
+  background-image:
+    linear-gradient(#ddd 18px, transparent 18px),
+    linear-gradient(90deg, #ddd 18px, transparent 18px);
+  background-position: 0 0, 0 -2px, -2px 0;
+  background-color: #999;
+  background-size:  20px 20px, 20px 20px;
+*/ }
+
+.animation .ball {
+  display: none; }
