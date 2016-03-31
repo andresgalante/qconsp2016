@@ -1,6 +1,5 @@
 @import "base";
 
-
 .blendmode img:first-of-type{
 /* Darken modes =================== */
 //  mix-blend-mode: multiply;
@@ -29,8 +28,10 @@
 }
 
 body{
-  background: #fff;
+  background: red;
 }
-img.paper{
 
+img.paper{
+  filter: brightness(1.1) invert(1);
+  mix-blend-mode: screen;
 }

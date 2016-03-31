@@ -28,9 +28,13 @@ img {
   display: inline-block; }
 
 .leon {
+  overflow: hidden;
   position: relative;
   width: 800px;
   height: 533px; }
+  .leon:hover img:first-of-type {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
   .leon:before {
     content: "";
     position: absolute;
@@ -39,8 +43,8 @@ img {
     width: 800px;
     height: 533px;
     z-index: 10;
-    background-image: -webkit-linear-gradient(315deg, tomato, magenta);
-    background-image: linear-gradient(135deg, tomato, magenta);
+    background-image: -webkit-linear-gradient(315deg, tomato, orange);
+    background-image: linear-gradient(135deg, tomato, orange);
     mix-blend-mode: overlay;
     -webkit-filter: opacity(0.3);
             filter: opacity(0.3); }
@@ -54,6 +58,8 @@ img {
       -webkit-filter: contrast(0.8) brightness(0.8) sepia(0.2);
               filter: contrast(0.8) brightness(0.8) sepia(0.2); }
     .leon img:first-of-type {
+      -webkit-transition: .3s ease all;
+      transition: .3s ease all;
       z-index: 1;
       right: 0px;
       top: 30px;
